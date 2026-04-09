@@ -1,0 +1,342 @@
+{
+  "main": {
+    "id": "39142e0af04abe32",
+    "type": "split",
+    "children": [
+      {
+        "id": "06b877f0de2c7baa",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c0f572132a4c74e9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CLAUDE.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "CLAUDE"
+            }
+          },
+          {
+            "id": "58d9541ef8216abd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "index.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "index"
+            }
+          },
+          {
+            "id": "e50339b998ae6afa",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "log.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "log"
+            }
+          },
+          {
+            "id": "5194d43d46a4eaed",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ops/ingest.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "ingest"
+            }
+          },
+          {
+            "id": "f6e326dcea49c55e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ops/query.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "query"
+            }
+          },
+          {
+            "id": "31a50691b869b96f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ops/lint.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "lint"
+            }
+          },
+          {
+            "id": "24d6106623659744",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ops/consolidate.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "consolidate"
+            }
+          },
+          {
+            "id": "8d40e18a24e3ccfc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CLAUDE.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "CLAUDE"
+            }
+          },
+          {
+            "id": "2431d8b8d44a9f34",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ops/ingest.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "ingest"
+            }
+          }
+        ],
+        "currentTab": 8
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "3e7c39c619d879a9",
+    "type": "split",
+    "children": [
+      {
+        "id": "926ba7135d2ed162",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3ea280759cbeecf1",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "299e36452f1d5bb0",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "3afc7ce67461c9d3",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "0947ccefc586d949",
+    "type": "split",
+    "children": [
+      {
+        "id": "427e42edac5d2981",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "91ff136dbb59bec4",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "ops/ingest.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for ingest"
+            }
+          },
+          {
+            "id": "5be1af5708f963b3",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "ops/ingest.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from ingest"
+            }
+          },
+          {
+            "id": "49f4e5f6412d3971",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "82c6b77e70ef8591",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "bcbfdb79bbe342da",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "ops/ingest.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of ingest"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "3ea280759cbeecf1",
+  "lastOpenFiles": [
+    "wiki/concepts/patron-model.md",
+    "wiki/sources/obsidian-note-2025-12-03.md",
+    "wiki/sources/logseq-journal-2025-07-20.md",
+    "wiki/entities/react.md",
+    "wiki/sources/logseq-journal-2025-07-17.md",
+    "wiki/concepts/logseq-slash-commands.md",
+    "wiki/concepts/interstitial-journaling.md",
+    "wiki/entities/logseq.md",
+    "wiki/sources/logseq-journal-2025-07-15.md",
+    "wiki/concepts/matrix-protocol.md",
+    "wiki/sources/2025nov29-building-a-messaging-hub.md",
+    "PRIORITIES.md",
+    "wiki/entities/pydantic-ai.md",
+    "wiki/concepts/Dual-Layer-Knowledge-System.md",
+    "wiki/concepts/Citation-Pattern-Research-Discovery.md",
+    "wiki/concepts/Knowledge-Validation-Agent.md",
+    "wiki/sources/2026-mar-27-is-this-still-true.md",
+    "wiki/entities/entity-setlist-fm.md",
+    "wiki/concepts/concept-film-discovery.md",
+    "wiki/concepts/concept-artist-monitoring.md",
+    "wiki/concepts/concept-interest-tracker.md",
+    "wiki/sources/source-2026mar20-interest-tracker.md",
+    "wiki/entities/entity-vlad.md",
+    "wiki/entities/entity-mrunali.md",
+    "wiki/entities/entity-evan.md",
+    "wiki/entities/entity-amazon.md",
+    "db/system.sqlite-shm",
+    "db/system.sqlite-wal",
+    "python/ops/lint.py",
+    "python/ops/_context.py",
+    "python/ops/__pycache__/query.cpython-313.pyc",
+    "python/ops/__pycache__/__init__.cpython-310.pyc",
+    "python/ops/__pycache__/__init__.cpython-313.pyc",
+    "python/ops/__pycache__/ingest.cpython-310.pyc",
+    "python/ops/__pycache__/ingest.cpython-313.pyc",
+    "python/ops/__pycache__/lint.cpython-313.pyc",
+    "raw/obsidian-notes/Pasted image 20260403123819.png",
+    "raw/obsidian-notes/Pasted image 20251112133110.png",
+    "obsidian-notes/Pasted image 20260403123819.png",
+    "obsidian-notes/Pasted image 20251112133110.png"
+  ]
+}

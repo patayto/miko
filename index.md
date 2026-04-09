@@ -110,3 +110,12 @@ Last updated: 2026-04-09 (ingest: obsidian-note-2025-12-03)
 | Page | Summary | Updated |
 |---|---|---|
 | [[Personal Todos from Logseq Journal 2025-07-09]] | Master task list capturing all open todos from subscription audit and financial reconciliation | 2026-04-09 |
+
+## Ignored Sources
+
+These source files have been scanned but contain no substantive content (empty stubs, bare URLs only, etc.) and should not be re-scanned:
+
+| File | Reason | Scanned |
+|---|---|---|
+| `2025fall - Beginner Korean.md` (logseq-pages) | Empty stub — single newline, no content | 2026-04-09 |
+| `2025fall - System Design.md` (logseq-pages) | Empty stub — single dash, no content | 2026-04-09 |
