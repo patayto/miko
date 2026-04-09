@@ -28,7 +28,9 @@ When ideation is chronic and depression structural, the person may map out their
 
 When death feels like the background condition, probabilistic reasoning about career and ambition shifts. The small chance of achieving an extraordinary goal is not much worse than the certainty of a comfortable life that feels meaningless. Risk tolerance expands — not recklessly, but logically. If the alternatives are "die anyway" or "try the impossible," attempting the impossible becomes reasonable. This reframe lets the person act against conventional advice without feeling irrational.
 
-See also: [[Motivational Conflict]], [[Privilege and Guilt]], [[Values Alignment]], [[Authentic Wants]], [[Patron Model]]
+The sustained high-intensity emotional baseline described in [[Emotional Dysregulation]] compounds structural depression: when every provocation hits at full force and recovery is slow, the cumulative load is significantly heavier. [[Sensory Sensitivity]] adds further ambient cost. Together these may contribute to the exhaustion that underlies chronic ideation.
+
+See also: [[Motivational Conflict]], [[Privilege and Guilt]], [[Values Alignment]], [[Authentic Wants]], [[Patron Model]], [[Emotional Dysregulation]]
 
 ---
 *My notes - do not edit below this line*

@@ -4,6 +4,20 @@ Append-only. Newest entries at top. Search for `## [` to find individual entries
 
 ---
 
+## [2026-04-09 12:25] ingest | ASD referral q's.md
+Status: complete
+Summary: Ingested personal ASD referral questionnaire responses; created source page and four new concept pages covering social communication, sensory sensitivity, hyperfixation, and emotional dysregulation; updated Depression and Ideation.
+Details:
+- Source page: [[ASD Referral Questions]]
+- Concepts created: [[Social Communication Differences]], [[Sensory Sensitivity]], [[Hyperfixation]], [[Emotional Dysregulation]]
+- Concepts updated: [[Depression and Ideation]] (added link to emotional dysregulation and sensory load as compounding factors)
+- Entities updated: none
+- New pages created: [[ASD Referral Questions]], [[Social Communication Differences]], [[Sensory Sensitivity]], [[Hyperfixation]], [[Emotional Dysregulation]]
+- Tasks extracted: follow up on ASD referral/assessment next steps
+- Stubs noted: ASD (assessment concept), masking, pragmatic language, flow states
+
+---
+
 ## [2026-04-09 12:20] ingest | 2025dec4.md
 Status: complete
 Summary: Ingested personal essay on modern life overhead and the desire for intentional life design; created source page and two new concept pages.

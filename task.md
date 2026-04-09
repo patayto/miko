@@ -27,6 +27,10 @@ updated: 2026-04-09
 - [ ] Research LogSeq journal templates [[Logseq Journal 2025-07-15]]
 - [ ] Decide on LogSeq sync strategy (cloud / paid sync / self-hosted vault) [[Logseq Journal 2025-07-15]]
 
+## Health & Wellbeing
+
+- [ ] Follow up on ASD referral / assessment next steps [[ASD Referral Questions]]
+
 ## LLM-wiki & Content Projects
 
 - [ ] Setup llm-wiki [[Logseq Journal 2026-04-07]]

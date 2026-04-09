@@ -1,7 +1,7 @@
 # Index
 
 Agent-maintained catalog. Updated after every operation. Do not edit manually.
-Last updated: 2026-04-09 (ingest: obsidian-note-2025-12-04)
+Last updated: 2026-04-09 (ingest: ASD referral q's)
 
 ## Concepts
 
@@ -28,7 +28,7 @@ Last updated: 2026-04-09 (ingest: obsidian-note-2025-12-04)
 | [[Sub-agents]] | Parallel Claude Code sub-instances for delegated, independent work | 2026-04-09 |
 | [[Claude Code Hooks]] | Shell commands triggered by Claude Code lifecycle events | 2026-04-09 |
 | [[ultrathink]] | Keyword signalling maximum thinking budget in Claude Code | 2026-04-09 |
-| [[Depression and Ideation]] | Chronic passive suicidal ideation as a structural condition; distinct from acute crisis | 2026-04-09 |
+| [[Depression and Ideation]] | Chronic passive suicidal ideation as a structural condition; distinct from acute crisis; links to emotional dysregulation | 2026-04-09 |
 | [[Diagram Generation as Agent]] | Architecture/class diagram generation via slash commands | 2026-04-09 |
 | [[Project Planning Agents]] | LLM agent grounded in planning textbooks for consistent multi-level output | 2026-04-09 |
 | [[Fuzzy Cache]] | Semantic-similarity caching for LLM inputs; open design problem | 2026-04-09 |
@@ -59,6 +59,10 @@ Last updated: 2026-04-09 (ingest: obsidian-note-2025-12-04)
 | [[LogSeq Slash Commands]] | Inline `/` command palette and `<` advanced commands for structured LogSeq content | 2026-04-09 |
 | [[Modern Life Overhead]] | The sprawling set of individual responsibilities in 21st-century Western society; the ratchet of expanding expectations | 2026-04-09 |
 | [[Optimal Life Design]] | Constructing a deliberate framework for living that provides confidence actions compound toward desired outcomes | 2026-04-09 |
+| [[Social Communication Differences]] | Reliance on explicit speech over paralinguistic cues; difficulty in unstructured social settings; ASD-linked | 2026-04-09 |
+| [[Sensory Sensitivity]] | Atypical sensory processing (hyper- and hypo-sensitivity) across tactile, auditory, visual, and thermal modalities | 2026-04-09 |
+| [[Hyperfixation]] | Intense consuming focus on a subject; drives exhaustive learning; social impact often invisible in real time | 2026-04-09 |
+| [[Emotional Dysregulation]] | Disproportionately intense and slow-to-resolve emotional responses; physical discharge more effective than mindfulness | 2026-04-09 |
 
 ## Entities
 
@@ -107,6 +111,7 @@ Last updated: 2026-04-09 (ingest: obsidian-note-2025-12-04)
 | [[Logseq Journal 2025-07-15]] | First-contact LogSeq exploration: interstitial journaling, slash commands, kanban limits, syncing options | 2026-04-09 |
 | [[Logseq Journal 2025-07-17]] | Minimal single-entry journal; bare React wikilink at 14:34 with no surrounding context | 2026-04-09 |
 | [[Logseq Journal 2025-07-20]] | Minimal single-entry journal; bare dinner wikilink at 21:21 with no surrounding context | 2026-04-09 |
+| [[ASD Referral Questions]] | Personal responses to ASD referral questionnaire across seven domains: social, sensory, routines, interests, motor, emotion, identity | 2026-04-09 |
 
 ## Queries
 
