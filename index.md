@@ -1,7 +1,7 @@
 # Index
 
 Agent-maintained catalog. Updated after every operation. Do not edit manually.
-Last updated: 2026-04-09 (ingest: logseq-journal-2025-07-15)
+Last updated: 2026-04-09 (ingest: logseq-journal-2025-07-17)
 
 ## Concepts
 
@@ -76,6 +76,7 @@ Last updated: 2026-04-09 (ingest: logseq-journal-2025-07-15)
 | [[Vlad]] | Applied scientist on Demographic Targeting; led ML architecture research and model improvements | 2026-04-09 |
 | [[Setlist.fm]] | Concert database providing tour dates, venues, and setlists across artists and genres | 2026-04-09 |
 | [[LogSeq]] | Open-source local-first outliner and knowledge management tool built around daily journals and bidirectional linking | 2026-04-09 |
+| [[React]] | JavaScript UI library by Meta; component-based, hook-driven, declarative rendering | 2026-04-09 |
 
 ## Sources
 
@@ -99,6 +100,7 @@ Last updated: 2026-04-09 (ingest: logseq-journal-2025-07-15)
 | [[2026 Mar 27 - Is This Still True?]] | Design doc for AI-driven knowledge validation system using agents and citation patterns to keep knowledge current | 2026-04-09 |
 | [[2025nov29 - Building a Messaging Hub]] | Bookmark note linking to matrix.org; early exploration of self-hosted messaging hub concept | 2026-04-09 |
 | [[Logseq Journal 2025-07-15]] | First-contact LogSeq exploration: interstitial journaling, slash commands, kanban limits, syncing options | 2026-04-09 |
+| [[Logseq Journal 2025-07-17]] | Minimal single-entry journal; bare React wikilink at 14:34 with no surrounding context | 2026-04-09 |
 
 ## Queries
 

@@ -4,6 +4,18 @@ Append-only. Newest entries at top. Search for `## [` to find individual entries
 
 ---
 
+## [2026-04-09 12:05] ingest | 2025_07_17.md
+Status: complete
+Summary: Minimal journal entry (single React wikilink at 14:34) ingested; source page and React entity stub created.
+Details:
+- Source page: [[Logseq Journal 2025-07-17]]
+- Concepts updated: none
+- Entities created: [[React]]
+- New pages created: [[Logseq Journal 2025-07-17]], [[React]]
+- Stubs noted: none (React page written from background knowledge; no content in source to stub)
+
+---
+
 ## [2026-04-09 12:00] ingest | 2025_07_15.md
 Status: complete
 Summary: First-contact LogSeq journal ingested; created source page, LogSeq entity, Interstitial Journaling concept, and LogSeq Slash Commands concept.
