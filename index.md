@@ -1,7 +1,7 @@
 # Index
 
 Agent-maintained catalog. Updated after every operation. Do not edit manually.
-Last updated: 2026-04-09 (ingest: logseq-journal-2025-07-20)
+Last updated: 2026-04-09 (ingest: obsidian-note-2025-12-03)
 
 ## Concepts
 
@@ -37,6 +37,7 @@ Last updated: 2026-04-09 (ingest: logseq-journal-2025-07-20)
 | [[Artist Monitoring]] | Tracking tour dates, releases, social media, and festivals from favorite music artists | 2026-04-09 |
 | [[Film Discovery]] | Active tracking system for upcoming films filtered by actors, directors, genres, and franchises | 2026-04-09 |
 | [[Motivational Conflict]] | The split between the self that wants to change and the self that refuses | 2026-04-09 |
+| [[Patron Model]] | The fantasy of a powerful patron who funds independent intellectual work; modern form is the corporation as king's court | 2026-04-09 |
 | [[Context-Aware Knowledge Organization]] | Higher-order organizational principle where contexts (Personal/Research/Work) sit above topics | 2026-04-09 |
 | [[Domain-Specific Parsing Agents]] | Multi-agent pattern for handling diverse source formats in knowledge systems | 2026-04-09 |
 | [[LLM-wiki Architecture]] | LLM-enabled knowledge management system with raw/, wiki/, operations, and multi-agent design | 2026-04-09 |
@@ -91,6 +92,7 @@ Last updated: 2026-04-09 (ingest: logseq-journal-2025-07-20)
 | [[Python Learnings for Kraken]] | Django async views, pydantic-ai, and the fuzzy cache problem | 2026-04-09 |
 | [[Ranting]] | Raw personal processing: motivational split, authentic wants, privilege, identity | 2026-04-09 |
 | [[Obsidian Note 2025-12-01: On Bitterness and Future-Shaping]] | Chronic ideation, the future-shaping paradox, and the bind between authenticity and connection | 2026-04-09 |
+| [[Obsidian Note 2025-12-03: Goals, Castles, and the King's Court]] | Four-path depression frame, self-portrait, the patron fantasy, Amazon as castle, and shooting for the moon | 2026-04-09 |
 | [[Logseq Journal 2025-05-13]] | Early-stage capture of Spotify social playlist concept | 2026-04-09 |
 | [[Logseq Journal 2025-07-09]] | Subscription audit and account consolidation; multi-provider subscription rationalization | 2026-04-09 |
 | [[Deliveroo Interview Prep]] | Technical interview assessment guide covering REST API, systems design, testing, and coding | 2026-04-09 |

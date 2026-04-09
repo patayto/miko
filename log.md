@@ -4,6 +4,20 @@ Append-only. Newest entries at top. Search for `## [` to find individual entries
 
 ---
 
+## [2026-04-09 12:15] ingest | 2025dec3.md
+Status: complete
+Summary: Ingested raw personal processing note on goals, identity, the patron fantasy, and Amazon-as-castle; created source page and new Patron Model concept; updated Depression and Ideation and Authentic Wants.
+Details:
+- Source page: [[Obsidian Note 2025-12-03: Goals, Castles, and the King's Court]]
+- Concepts created: [[Patron Model]]
+- Concepts updated: [[Depression and Ideation]] (four-path frame, shooting-for-the-moon framing), [[Authentic Wants]] (scale and freedom section)
+- Entities updated: none (Amazon entity already exists and is comprehensive)
+- New pages created: [[Obsidian Note 2025-12-03: Goals, Castles, and the King's Court]], [[Patron Model]]
+- Tasks extracted: none (purely reflective; no actionable items)
+- Stubs noted: none
+
+---
+
 ## [2026-04-09 12:10] ingest | 2025_07_20.md
 Status: complete
 Summary: Minimal journal entry (single dinner wikilink at 21:21) ingested; source page created, no concepts or entities warranted.
