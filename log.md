@@ -4,6 +4,18 @@ Append-only. Newest entries at top. Search for `## [` to find individual entries
 
 ---
 
+## [2026-04-09 00:00] ingest | 2025nov29 - building a messaging hub.md
+Status: complete
+Summary: Minimal bookmark note linking to matrix.org; source page created and Matrix Protocol concept page written from external knowledge.
+Details:
+- Source page: [[2025nov29 - Building a Messaging Hub]]
+- Concepts updated: none
+- Entities updated: none
+- New pages created: [[2025nov29 - Building a Messaging Hub]], [[Matrix Protocol]]
+- Stubs noted: bridges, Synapse homeserver, Element client
+
+---
+
 ## [2026-04-09 23:55] ingest | 2025fall - System Design.md
 Status: partial
 Summary: Source file is an empty Logseq stub (1 byte, single dash); no content to ingest, no wiki pages created.
