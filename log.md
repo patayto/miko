@@ -4,6 +4,19 @@ Append-only. Newest entries at top. Search for `## [` to find individual entries
 
 ---
 
+## [2026-04-09 12:10] ingest | 2025_07_20.md
+Status: complete
+Summary: Minimal journal entry (single dinner wikilink at 21:21) ingested; source page created, no concepts or entities warranted.
+Details:
+- Source page: [[Logseq Journal 2025-07-20]]
+- Concepts updated: none
+- Entities updated: none
+- New pages created: [[Logseq Journal 2025-07-20]]
+- Stubs noted: none
+- Tasks extracted: none
+
+---
+
 ## [2026-04-09 12:05] ingest | 2025_07_17.md
 Status: complete
 Summary: Minimal journal entry (single React wikilink at 14:34) ingested; source page and React entity stub created.
