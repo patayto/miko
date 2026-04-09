@@ -12,7 +12,11 @@ The author uses Claude Code as a primary development environment and workflow au
 
 Performance can be layered: [[ultrathink]] signals maximum thinking budget; Plan Mode encourages deliberate planning before execution; "revving" primes the model's reasoning; [[Sub-agents]] parallelise independent work.
 
-See also: [[SuperClaude Framework]], [[Claude Code Hooks]], [[Sub-agents]], [[ultrathink]], [[Skills vs MCP Servers]]
+## Cost Optimization and Provider Integration
+
+Claude Code supports integration with alternative LLM providers through [[LiteLLM]], a proxy that routes requests across multiple providers like [[Qwen Code]] and others. By configuring environment variables to point to a local LiteLLM server, developers can extend session limits and manage API costs by transparently switching between Claude and other models on a per-request basis.
+
+See also: [[SuperClaude Framework]], [[Claude Code Hooks]], [[Sub-agents]], [[ultrathink]], [[Skills vs MCP Servers]], [[LiteLLM]], [[Qwen Code]]
 
 ---
 *My notes - do not edit below this line*
