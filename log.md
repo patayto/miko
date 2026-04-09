@@ -4,6 +4,20 @@ Append-only. Newest entries at top. Search for `## [` to find individual entries
 
 ---
 
+## [2026-04-09 12:20] ingest | 2025dec4.md
+Status: complete
+Summary: Ingested personal essay on modern life overhead and the desire for intentional life design; created source page and two new concept pages.
+Details:
+- Source page: [[Obsidian Note 2025-12-04: The Overhead of Being Human]]
+- Concepts created: [[Modern Life Overhead]], [[Optimal Life Design]]
+- Concepts linked: [[Motivational Conflict]], [[Values Alignment]], [[Authentic Wants]], [[Task Prioritization]], [[Ultradian Rhythms]], [[Privilege and Guilt]], [[Depression and Ideation]]
+- Entities updated: none
+- New pages created: [[Obsidian Note 2025-12-04: The Overhead of Being Human]], [[Modern Life Overhead]], [[Optimal Life Design]]
+- Tasks extracted: none (source ends with a question to AI, not a personal action item)
+- Stubs noted: life-design literature, habit formation research
+
+---
+
 ## [2026-04-09 12:15] ingest | 2025dec3.md
 Status: complete
 Summary: Ingested raw personal processing note on goals, identity, the patron fantasy, and Amazon-as-castle; created source page and new Patron Model concept; updated Depression and Ideation and Authentic Wants.

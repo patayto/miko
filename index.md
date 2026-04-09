@@ -1,7 +1,7 @@
 # Index
 
 Agent-maintained catalog. Updated after every operation. Do not edit manually.
-Last updated: 2026-04-09 (ingest: obsidian-note-2025-12-03)
+Last updated: 2026-04-09 (ingest: obsidian-note-2025-12-04)
 
 ## Concepts
 
@@ -57,6 +57,8 @@ Last updated: 2026-04-09 (ingest: obsidian-note-2025-12-03)
 | [[Matrix Protocol]] | Open, federated messaging protocol for self-hosted communication hubs and cross-platform bridging | 2026-04-09 |
 | [[Interstitial Journaling]] | Timestamped throughout-the-day capture practice; reduces filing friction via retroactive organization | 2026-04-09 |
 | [[LogSeq Slash Commands]] | Inline `/` command palette and `<` advanced commands for structured LogSeq content | 2026-04-09 |
+| [[Modern Life Overhead]] | The sprawling set of individual responsibilities in 21st-century Western society; the ratchet of expanding expectations | 2026-04-09 |
+| [[Optimal Life Design]] | Constructing a deliberate framework for living that provides confidence actions compound toward desired outcomes | 2026-04-09 |
 
 ## Entities
 
@@ -93,6 +95,7 @@ Last updated: 2026-04-09 (ingest: obsidian-note-2025-12-03)
 | [[Ranting]] | Raw personal processing: motivational split, authentic wants, privilege, identity | 2026-04-09 |
 | [[Obsidian Note 2025-12-01: On Bitterness and Future-Shaping]] | Chronic ideation, the future-shaping paradox, and the bind between authenticity and connection | 2026-04-09 |
 | [[Obsidian Note 2025-12-03: Goals, Castles, and the King's Court]] | Four-path depression frame, self-portrait, the patron fantasy, Amazon as castle, and shooting for the moon | 2026-04-09 |
+| [[Obsidian Note 2025-12-04: The Overhead of Being Human]] | Personal essay on modern life's overwhelming individual responsibility load and the desire for an intentional life framework | 2026-04-09 |
 | [[Logseq Journal 2025-05-13]] | Early-stage capture of Spotify social playlist concept | 2026-04-09 |
 | [[Logseq Journal 2025-07-09]] | Subscription audit and account consolidation; multi-provider subscription rationalization | 2026-04-09 |
 | [[Deliveroo Interview Prep]] | Technical interview assessment guide covering REST API, systems design, testing, and coding | 2026-04-09 |
