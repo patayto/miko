@@ -4,6 +4,18 @@ Append-only. Newest entries at top. Search for `## [` to find individual entries
 
 ---
 
+## [2026-04-09 12:00] ingest | 2025_07_15.md
+Status: complete
+Summary: First-contact LogSeq journal ingested; created source page, LogSeq entity, Interstitial Journaling concept, and LogSeq Slash Commands concept.
+Details:
+- Source page: [[Logseq Journal 2025-07-15]]
+- Concepts updated: none
+- Entities updated: none
+- New pages created: [[Logseq Journal 2025-07-15]], [[LogSeq]], [[Interstitial Journaling]], [[LogSeq Slash Commands]]
+- Stubs noted: open-source-software, readwise
+
+---
+
 ## [2026-04-09 00:00] ingest | 2025nov29 - building a messaging hub.md
 Status: complete
 Summary: Minimal bookmark note linking to matrix.org; source page created and Matrix Protocol concept page written from external knowledge.

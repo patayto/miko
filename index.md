@@ -1,7 +1,7 @@
 # Index
 
 Agent-maintained catalog. Updated after every operation. Do not edit manually.
-Last updated: 2026-04-09 (ingest: 2025nov29 - building a messaging hub)
+Last updated: 2026-04-09 (ingest: logseq-journal-2025-07-15)
 
 ## Concepts
 
@@ -54,6 +54,8 @@ Last updated: 2026-04-09 (ingest: 2025nov29 - building a messaging hub)
 | [[Citation Pattern Research Discovery]] | Technique for discovering research evolution by analyzing co-citation patterns in academic literature | 2026-04-09 |
 | [[Dual-Layer Knowledge System]] | Architecture separating personal knowledge (human synthesis) from information (source materials) | 2026-04-09 |
 | [[Matrix Protocol]] | Open, federated messaging protocol for self-hosted communication hubs and cross-platform bridging | 2026-04-09 |
+| [[Interstitial Journaling]] | Timestamped throughout-the-day capture practice; reduces filing friction via retroactive organization | 2026-04-09 |
+| [[LogSeq Slash Commands]] | Inline `/` command palette and `<` advanced commands for structured LogSeq content | 2026-04-09 |
 
 ## Entities
 
@@ -73,6 +75,7 @@ Last updated: 2026-04-09 (ingest: 2025nov29 - building a messaging hub)
 | [[Mrunali]] | SDM on Demographic Targeting team; managed Filipe and team growth | 2026-04-09 |
 | [[Vlad]] | Applied scientist on Demographic Targeting; led ML architecture research and model improvements | 2026-04-09 |
 | [[Setlist.fm]] | Concert database providing tour dates, venues, and setlists across artists and genres | 2026-04-09 |
+| [[LogSeq]] | Open-source local-first outliner and knowledge management tool built around daily journals and bidirectional linking | 2026-04-09 |
 
 ## Sources
 
@@ -95,6 +98,7 @@ Last updated: 2026-04-09 (ingest: 2025nov29 - building a messaging hub)
 | [[2026 Mar 20 - Interest Tracker]] | Project concept for unified tracker of music (tours, releases, social) and film (actors, directors, releases) | 2026-04-09 |
 | [[2026 Mar 27 - Is This Still True?]] | Design doc for AI-driven knowledge validation system using agents and citation patterns to keep knowledge current | 2026-04-09 |
 | [[2025nov29 - Building a Messaging Hub]] | Bookmark note linking to matrix.org; early exploration of self-hosted messaging hub concept | 2026-04-09 |
+| [[Logseq Journal 2025-07-15]] | First-contact LogSeq exploration: interstitial journaling, slash commands, kanban limits, syncing options | 2026-04-09 |
 
 ## Queries
 
