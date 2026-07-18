@@ -6,100 +6,186 @@ Processes a source file from `raw/` and integrates its knowledge into the wiki.
 
 Run when the human points you at a specific file in `raw/`, drops a new file into `raw/`, or asks you to process a Logseq journal entry or Obsidian note.
 
+If no specific file is given, query the sources table for the next pending item:
+```bash
+sqlite3 /Users/filipe/obsidian/miko/miko.db \
+  "SELECT id, path, filename, content_size FROM sources WHERE status = 'pending' ORDER BY discovered LIMIT 1;"
+```
+
 ## Steps
 
-1. Read the source file fully.
+### 0. Pre-flight: confirm this file has not already been ingested
 
-2. Check `index.md` for any existing page on the same subject. If one exists, you will update it in step 5 rather than create a new page.
+**This step is mandatory. Do not skip it.**
 
-3. Briefly summarize to the human:
-   - The source's main subject (one sentence)
-   - 3-5 key ideas
-   - Which existing wiki pages it touches
-   - Which new pages it might warrant
-   Then proceed with steps 4-9 autonomously.
-
-4. Write a source summary page in `wiki/sources/` using the filename format `source-title-slug.md`.
-   - type: source
-   - Body: 200-400 words summarising key claims in your own words. Do not reproduce the source text.
-   - Link every concept and entity using [[wikilinks]].
-
-5. Update or create concept pages in `wiki/concepts/`.
-   - If a page exists: read it fully, then revise the body to incorporate what this source adds. Update the `updated` date.
-   - If no page exists: create one. type: concept. Body: 150-300 words. Write in present tense. No references to "this article" or "this source".
-
-6. Update or create entity pages in `wiki/entities/` for each named person, tool, organisation, or project.
-   - Same update-or-create rule as concepts.
-
-7. If the source references concepts that deserve their own page but you did not create one, note them in the source page body as: `See also: concept-name (not yet written)`.
-
-8. Update `index.md`. Add or update one row per page created or modified.
-
-9. Append to `log.md`:
-
-```
-## [YYYY-MM-DD HH:MM] ingest | filename
-Status: complete
-Summary: one sentence.
-Details:
-- Source page: [[source-page-title]]
-- Concepts updated: [[x]], [[y]]
-- Entities updated: [[a]]
-- New pages created: [[b]], [[c]]
-- Stubs noted: name1, name2
+Check the `sources` table first (authoritative if populated):
+```bash
+sqlite3 /Users/filipe/obsidian/miko/miko.db \
+  "SELECT id, status, ingested, notes FROM sources WHERE filename = 'filename.md';"
 ```
 
-## Rules
+If `status = 'ingested'` or `status = 'ignored'`: **stop**. Report to the human and do nothing further.
+
+If the sources table is empty or has no record for this file, fall back to checking the log:
+```bash
+sqlite3 /Users/filipe/obsidian/miko/miko.db \
+  "SELECT timestamp, status, summary FROM log
+   WHERE subject = 'filename.md' AND operation = 'ingest'
+   ORDER BY timestamp DESC LIMIT 3;"
+```
+
+If the log shows a completed ingest for this file: **stop**. Report to the human.
+
+If no record is found in either table: proceed.
+
+---
+
+### 0.5. Select model and delegate to sub-agent
+
+```bash
+sqlite3 /Users/filipe/obsidian/miko/miko.db \
+  "SELECT content_size FROM sources WHERE filename = 'filename.md';"
+```
+
+Select model:
+- `content_size < 0.5` (or NULL): **`haiku`**
+- `content_size >= 0.5`: **`sonnet`**
+
+**You cannot switch your own model mid-run.** Instead, spawn a sub-agent using the Agent tool with the selected model and delegate all remaining steps (1–10) to it. Pass the source path and filename explicitly in the prompt.
+
+Example prompt to sub-agent:
+> Run ops/ingest.md steps 1–10 for source file `{path}` (filename: `{filename}`). The pre-flight check (step 0) has already passed. Proceed from step 1.
+
+---
+
+### 1. Read the source file fully.
+
+### 2. Check for existing wiki pages on the same subject
+
+Before reading or planning anything further:
+```bash
+sqlite3 /Users/filipe/obsidian/miko/miko.db \
+  "SELECT title, type, summary FROM index_pages WHERE title LIKE '%keywords%';"
+```
+
+Note which pages already exist. You will **update** them in step 5/6, not recreate them.
+
+### 3. Briefly summarize to the human:
+- The source's main subject (one sentence)
+- 3–5 key ideas
+- Which existing wiki pages it touches (from step 2)
+- Which new pages it might warrant
+
+Then proceed with steps 4–10 autonomously.
+
+### 4. Write a source summary page in `wiki/sources/`
+
+Filename format: `source-title-slug.md`. Type: `source`.
+
+- **Every source file gets a source page, regardless of content length or type.** Personal notes, lists, stubs, and admin files all get indexed.
+- Body: describe what the file contains in your own words. Aim for 200–400 words for substantive files; a single paragraph is acceptable for thin files (lists, stubs, short notes).
+- Link every concept and entity using [[wikilinks]].
+- Source pages do not need a `## Sources` section.
+
+### 5. Update or create concept pages in `wiki/concepts/`
+
+**For each concept you identified in step 3:**
+
+Check existence first (do this before writing any file):
+```bash
+sqlite3 /Users/filipe/obsidian/miko/miko.db \
+  "SELECT title FROM index_pages WHERE title = 'Exact Concept Name';"
+```
+
+- If it exists: read the file fully, then revise the body, update the `updated` date, and add the current source to the `## Sources` section if not already listed.
+- If it does not exist: create `wiki/concepts/concept-slug.md`. Type: `concept`. Body: 150–300 words. Present tense. Always include a `## Sources` section listing `[[Source Page Title]]`.
+
+### 6. Update or create entity pages in `wiki/entities/`
+
+Same update-or-create logic as step 5. Entities are named people, tools, organisations, or projects. Always include a `## Sources` section on new entity pages; append to it on updates.
+
+### 7. Note stubs in the source page body
+
+For concepts referenced but not yet written:
+`See also: concept-name (not yet written)`
+
+### 8. Update the database index
+
+One INSERT OR REPLACE per page created or modified. Always include `source_id` — use the id of the source file being ingested (retrieved from the `sources` table in step 9):
+```bash
+sqlite3 /Users/filipe/obsidian/miko/miko.db \
+  "INSERT OR REPLACE INTO index_pages (title, type, summary, updated, source_id)
+   VALUES ('Page Title', 'concept', 'One-line summary.', 'YYYY-MM-DD', SOURCE_ID);"
+```
+
+For pages that already exist and are being updated, preserve any existing `source_id` if it already has one — only set it if it is currently NULL.
+
+### 9. Update the sources table
+
+Mark the source as ingested:
+```bash
+sqlite3 /Users/filipe/obsidian/miko/miko.db \
+  "UPDATE sources SET status = 'ingested', ingested = 'YYYY-MM-DD'
+   WHERE filename = 'filename.md';"
+```
+
+If the file was not yet in the sources table, insert it:
+```bash
+sqlite3 /Users/filipe/obsidian/miko/miko.db \
+  "INSERT OR IGNORE INTO sources (path, filename, filetype, discovered, status, ingested)
+   VALUES ('subdir/filename.md', 'filename.md', 'md', 'YYYY-MM-DD', 'ingested', 'YYYY-MM-DD');"
+```
+
+### 10. Append a log entry
+
+```bash
+sqlite3 /Users/filipe/obsidian/miko/miko.db \
+  "INSERT INTO log (timestamp, operation, subject, status, summary, details)
+   VALUES ('YYYY-MM-DD HH:MM', 'ingest', 'source-filename.md', 'complete',
+           'One sentence summary.',
+           '[\"Source page: [[Title]]\", \"Concepts created: [[X]], [[Y]]\", \"Entities updated: [[Z]]\", \"New pages: [[A]], [[B]]\", \"Stubs noted: name1\"]');"
+```
+
+---
+
+## Files with no readable content
+
+The only case where a source page is **not** created is when the file is entirely unreadable (e.g. a binary file with no extractable text, or a file that is literally empty — zero bytes or whitespace only). In that case:
+
+**Mark ignored in sources table:**
+```bash
+sqlite3 /Users/filipe/obsidian/miko/miko.db \
+  "UPDATE sources SET status = 'ignored', notes = 'Reason'
+   WHERE filename = 'filename.md';"
+```
+
+**Log the partial ingest:**
+```bash
+sqlite3 /Users/filipe/obsidian/miko/miko.db \
+  "INSERT INTO log (timestamp, operation, subject, status, summary, details)
+   VALUES ('YYYY-MM-DD HH:MM', 'ingest', 'filename.md', 'partial',
+           'File has no readable content; no wiki pages created.',
+           '[\"No source page created\"]');"
+```
+
+For all other files — including personal notes, lists, gift ideas, admin tasks, grocery lists, short stubs, and sensitive-seeming data — create a source page and mark as ingested. Do not apply personal judgement about whether a note is "worth" indexing.
+
+---
+
+## task.md: Master Personal Todo List
+
+- **File:** `/Users/filipe/obsidian/miko/task.md`
+- Extract actionable personal tasks from the source and append as unchecked items.
+- Format: `- [ ] Task description [[Source Page Title]]`
+- Read the file first to avoid duplicates.
+- Never delete existing items. Never modify the footer (`---` / `*My notes - do not edit below this line*`).
+
+---
+
+## Hard constraints
 
 - Do not reproduce large chunks of source text in wiki pages.
 - Do not create a new page if one already exists on the same topic.
 - Do not write to anything inside `raw/`.
-- If a source file is empty, a stub, or contains no substantive content: do not create wiki pages. Instead, append a row to the "Ignored Sources" section of `index.md` with a note explaining why (e.g., "empty stub", "bare URL only"). This prevents re-scanning.
-
-## task.md: Master Personal Todo List
-
-### Purpose
-
-`task.md` is a persistent, master todo list that captures all actionable personal tasks extracted from sources throughout the wiki system. It serves as a single source of truth for the human's open action items, regardless of where they originated.
-
-### Location & Format
-
-- **File:** `/Users/filipe/obsidian/miko/task.md`
-- **Type:** query
-- **Structure:** Checklist format with sections by category/theme
-- **Format for each todo:** `- [ ] Task description [[Source Page Title]]`
-
-### Rules for Agents
-
-1. **When to update:** Any source you ingest (Logseq journals, Obsidian notes, or other sources) may contain actionable items. Extract them.
-
-2. **How to add tasks:** 
-   - Read the current `task.md` to avoid duplicates
-   - Append new tasks as unchecked items (`- [ ]`)
-   - Always include a backlink to the source page where the task was discovered
-   - Organize by logical section/category if possible
-
-3. **Structure example:**
-   ```
-   - [ ] Specific actionable task [[Source Page Name]]
-   ```
-
-4. **Never delete items** from the master list. The human may mark them complete elsewhere and will manage the list themselves.
-
-5. **Always preserve the footer:** The line `---` followed by `*My notes - do not edit below this line*` must remain unchanged.
-
-6. **Avoid duplicates:** Before adding a task, scan the list to ensure it doesn't already exist. Reword rather than duplicate if needed.
-
-### When NOT to Update
-
-- If the source is purely conceptual or knowledge-focused (no action items)
-- If the extracted items are setup TODOs for incomplete course outlines or templates (use judgment)
-
-### Example
-
-If ingesting a source with tasks like "Research X", "Contact Y", "Fix Z", append them as:
-```
-- [ ] Research X [[Source Title]]
-- [ ] Contact Y [[Source Title]]
-- [ ] Fix Z [[Source Title]]
-```
+- Do not write to `index.md` or `log.md` — use the database only.
+- **Never delete rows from `log` or `sources`.** These tables are append-only. If you made an error, add a corrective log entry instead.
